@@ -53,7 +53,12 @@ function Inicio({ setPage }) {
   return (
     <>
       <section className="hero">
-        <div>
+        <img
+          className="hero-image"
+          src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2200&q=85"
+          alt="Mar turquesa y costa bajo el sol"
+        />
+        <div className="hero-copy">
           <p className="eyebrow">Asesoría personalizada</p>
           <h1>Un espacio claro para decidir y avanzar.</h1>
           <p className="lead">
@@ -66,10 +71,6 @@ function Inicio({ setPage }) {
             {" "}
             <button className="btn ghost" onClick={() => setPage("servicios")}>Ver opciones</button>
           </p>
-        </div>
-        <div className="portrait">
-          <span>Asesora titular</span>
-          <strong>Sandra Díaz</strong>
         </div>
       </section>
       <section className="section alt">
@@ -118,6 +119,10 @@ function Asesora() {
         <p>Atención presencial y virtual. Cada cliente tiene un panel propio después de registrarse.</p>
       </div>
       <div className="portrait">
+        <img
+          src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85"
+          alt="Paisaje de montaña junto a un lago"
+        />
         <span>Contacto profesional</span>
         <strong>sandra.diaz@agencia.test</strong>
       </div>
